@@ -6,19 +6,13 @@ import Footer from '../../components/Footer';
 export default function cart() {
   return (
     <div className="App">
-        <Header />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <Cart/>
-        <br/>
-        <br/>
-        <br/>
+      <Header />
+      <div style={{ 'marginBottom': '300px', 'display': 'inline-block' }}>
+        <Cart />
+      </div>
+      <div style={{'marginTop': '40px' }}>
         <Footer />
+      </div>
     </div>
   )
 }

@@ -9,14 +9,11 @@ const slideImage = [
   ];
   const Slideshow = () => {
     return (
-      <div className="container">
-        <br/>
-        <br/>
-        <br/>       
+      <div className="container">    
         <Slide>
          {slideImage.map((slideImage, index)=> (
             <div className="each-slide" key={index}>
-              <div style={{'backgroundImage': `url(${slideImage.src})`,'background-size': 'cover','height':'280pt','background-repeat': 'no-repeat'}}>
+              <div style={{'backgroundImage': `url(${slideImage.src})`,'backgroundSize': 'cover','height':'280pt','backgroundRepeat': 'no-repeat'}}>
                 <span>{slideImage.caption}</span>
               </div>
             </div>
